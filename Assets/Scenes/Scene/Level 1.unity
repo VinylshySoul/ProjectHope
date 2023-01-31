@@ -10562,7 +10562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da5b6d1d1be44246b1e2f7639195d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 6
+  jumpForce: 0
   moveForce: 3
   liftForce: 10
 --- !u!136 &860324231
@@ -10621,22 +10621,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &860324234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860324226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783331bf8041b664b84d282261a72f08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 3
-  jumpHeight: 4
-  gravityValue: -100
-  pVelocity: {x: 0, y: 0, z: 0}
 --- !u!143 &860324235
 CharacterController:
   m_ObjectHideFlags: 0

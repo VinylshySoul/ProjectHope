@@ -26,7 +26,7 @@ public class CameraMovement : MonoBehaviour
         //Up and down Camera
         rotationOnX -= mouseY;
         rotationOnX = Mathf.Clamp(rotationOnX, -40f, 40f);
-        Debug.Log($"rotation x {rotationOnX}");
+  
         transform.localEulerAngles = new Vector3(rotationOnX, 0f, 0f);
 
         //Left to Right Camera

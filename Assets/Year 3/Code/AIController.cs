@@ -47,7 +47,7 @@ public class AIController : MonoBehaviour
 
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speedWalk;
-        navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
+       // navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
     }
 
     private void Update()
@@ -110,7 +110,7 @@ public class AIController : MonoBehaviour
                 m_TimeToRotate -= Time.deltaTime;
             }
         }
-        else
+      /*  else
         {
             m_PlayerNear = false;
             playerLastPosition = Vector3.zero;
@@ -129,7 +129,7 @@ public class AIController : MonoBehaviour
                     m_WaitTime -= Time.deltaTime;
                 }
             }
-        }
+        }*/
     }
 
     private void OnAnimatorMove()

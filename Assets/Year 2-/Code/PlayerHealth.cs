@@ -44,4 +44,8 @@ public class PlayerHealth : MonoBehaviour
             health = 0;
         }
     }
+    public void laserdamage()
+    {
+        health = health - 20f;
+    }
 }

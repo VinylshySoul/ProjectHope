@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
 
     private void Start()
     {
-        _animator = GetComponentInChildren<Animator>();
+        _animator = GetComponent<Animator>();
     }
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)

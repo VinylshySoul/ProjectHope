@@ -11,6 +11,7 @@ public class Pickup : MonoBehaviour
         ui = GameObject.FindObjectOfType<UIController>();
     }
 
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))

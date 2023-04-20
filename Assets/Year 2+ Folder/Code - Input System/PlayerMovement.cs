@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 normalVector = Vector3.up;
     private Vector3 wallNormalVector;
 
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -101,6 +102,8 @@ public class PlayerMovement : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
+       
+
         crouching = Input.GetKey(KeyCode.LeftControl);
 
         //Crouching
@@ -143,7 +146,8 @@ public class PlayerMovement : MonoBehaviour
 
         //If holding jump && ready to jump, then jump
         if (readyToJump && jumping) Jump();
-
+       
+        
         //Set max speed
         float maxSpeed = this.maxSpeed;
 

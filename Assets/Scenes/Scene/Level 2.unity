@@ -7634,7 +7634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chController: {fileID: 557456855}
-  speedUpDown: -1
+  speedUpDown: 1
   FPSInput: {fileID: 0}
 --- !u!1 &558774370 stripped
 GameObject:
@@ -7882,15 +7882,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79d5da23dc92cf648bdda53c10720537, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2361
+      value: 2363.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79d5da23dc92cf648bdda53c10720537, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.687
+      value: 20.840445
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79d5da23dc92cf648bdda53c10720537, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.113
+      value: 84.59154
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 79d5da23dc92cf648bdda53c10720537, type: 3}
       propertyPath: m_LocalRotation.w

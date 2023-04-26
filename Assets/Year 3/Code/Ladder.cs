@@ -37,14 +37,19 @@ public class Ladder : MonoBehaviour
 
 	void Update()
 	{
-		if (inside == true && Input.GetKey("s"))
-		{
-			chController.transform.position += Vector3.up / speedUpDown;
-		}
-
 		if (inside == true && Input.GetKey("w"))
 		{
+			chController.transform.position += Vector3.up / speedUpDown;
+			var p = Vector3.up / speedUpDown;
+			print(" w key: " +p);
+		}
+
+		if (inside == true && Input.GetKey("s"))
+		{
 			chController.transform.position += Vector3.down / speedUpDown;
+			var p = Vector3.down / speedUpDown;
+			print(" s key: " + p);
+
 		}
 	}
 

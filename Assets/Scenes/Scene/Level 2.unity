@@ -7438,7 +7438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 1024375623}
   orientation: {fileID: 535596843}
-  moveSpeed: 1990
+  moveSpeed: 1800
   maxSpeed: 20
   grounded: 1
   whatIsGround:
@@ -7634,7 +7634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chController: {fileID: 557456855}
-  speedUpDown: 1
+  speedUpDown: -1
   FPSInput: {fileID: 0}
 --- !u!1 &558774370 stripped
 GameObject:
@@ -12801,8 +12801,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9999999, y: 0.9678759, z: 1}
-  m_Center: {x: 0, y: -0.01606185, z: 0}
+  m_Size: {x: 0.9999999, y: 1.0114791, z: 0.655702}
+  m_Center: {x: 0.0016078373, y: -0.037863873, z: 0.1721831}
 --- !u!23 &961959547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22983,8 +22983,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.6410227, z: 1}
+  m_Center: {x: 0, y: 0.17948864, z: 0}
 --- !u!23 &1602116583
 MeshRenderer:
   m_ObjectHideFlags: 0

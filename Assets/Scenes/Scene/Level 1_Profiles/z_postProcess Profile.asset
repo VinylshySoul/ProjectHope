@@ -18,10 +18,10 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 37.94174, y: 55.731915}
+    value: {x: 29.912596, y: 47.70278}
   minLuminance:
     overrideState: 1
-    value: -0.6
+    value: 1
   maxLuminance:
     overrideState: 1
     value: 5.9

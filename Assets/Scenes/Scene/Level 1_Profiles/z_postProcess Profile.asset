@@ -18,13 +18,13 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 29.912596, y: 47.70278}
+    value: {x: 12.070084, y: 29.86027}
   minLuminance:
     overrideState: 1
     value: 1
   maxLuminance:
     overrideState: 1
-    value: 5.9
+    value: 6.5
   keyValue:
     overrideState: 0
     value: 1
@@ -64,10 +64,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.611
+    value: 0.412
   smoothness:
     overrideState: 1
-    value: 0.196
+    value: 0.311
   roundness:
     overrideState: 1
     value: 1
@@ -169,7 +169,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.388
+    value: 0.322
   fastMode:
     overrideState: 1
     value: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
     value: 50
   distanceFade:
     overrideState: 1
-    value: 0.532
+    value: 0.496
   vignette:
     overrideState: 1
     value: 0.25

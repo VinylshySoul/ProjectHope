@@ -1,12 +1,22 @@
 fileFormatVersion: 2
 guid: 79d5da23dc92cf648bdda53c10720537
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Project_Cyber_Main_Character1_Project_Cyber_Main_Character_lambert4
+    second: {fileID: 2100000, guid: 528cf94da43b77b47931eaaccff3d80b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Project_Cyber_Main_Character_Project_Cyber_Main_Character_lambert4
+    second: {fileID: 2100000, guid: a44234e8fa3ad454ba684cc91a9e0326, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -17,6 +27,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -46,6 +57,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -57,6 +69,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8

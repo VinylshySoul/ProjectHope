@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Rotation and look
     private float xRotation;
-    private float sensitivity = 50f;
+    public float sensitivity = 50f;
     private float sensMultiplier = 1f;
 
     //Movement
@@ -211,8 +211,10 @@ public class PlayerMovement : MonoBehaviour
     private float desiredX;
     private void Look()
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
+        float mouseX = Input.GetAxis("Mouse X") * sensitivity * sensMultiplier * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * sensMultiplier * Time.deltaTime;
+
+        Debug.Log(mouseX); 
 
         //Find current look rotation
         Vector3 rot = playerCam.transform.localRotation.eulerAngles;
@@ -320,6 +322,11 @@ public class PlayerMovement : MonoBehaviour
     private void StopGrounded()
     {
         grounded = false;
+    }
+
+    public void SetNewSensitivity(float newSensitivity)
+    {
+        sensMultiplier = newSensitivity;
     }
 
 

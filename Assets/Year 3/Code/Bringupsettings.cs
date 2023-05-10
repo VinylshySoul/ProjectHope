@@ -28,7 +28,6 @@ public class Bringupsettings : MonoBehaviour
         setting.SetActive(true);
         issettingactive = true;
         this.GetComponent<MouseLook>().enabled = false;
-//if an error occurs make sure to delete and then add your own<>(Youtube doesn't allow angled brackets in the comments for some reason)
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -37,7 +36,6 @@ public class Bringupsettings : MonoBehaviour
         setting.SetActive(false);
         issettingactive = false;
         this.GetComponent<MouseLook>().enabled = true;
-//if an error occurs make sure to delete and then add your own<>(Youtube doesn't allow angled brackets in the comments for some reason)
         Cursor.lockState = CursorLockMode.Locked;
     }
 }

@@ -11,6 +11,8 @@ public class GrapplingGun : MonoBehaviour
     public Transform gunTip, camera, player;
     private float maxDistance = 50f;
     private SpringJoint joint;
+    public AudioClip impact;
+    AudioSource audioSource;
 
     void Awake()
     {
@@ -45,6 +47,12 @@ public class GrapplingGun : MonoBehaviour
         if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable))
         {
             print("grappling");
+ //pop audio.play() sound command here for grapple attached to something (andy)   remember its different command for a looping sound in unity 
+            void Start()
+            {
+                audioSource = GetComponent<AudioSource>();
+            }
+
             grapplePoint = hit.point;
             joint = player.gameObject.AddComponent<SpringJoint>();
             joint.autoConfigureConnectedAnchor = false;
@@ -84,7 +92,12 @@ public class GrapplingGun : MonoBehaviour
         if (!joint) return;
         print("drawrope");
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 8f);
+//pop playoneshot sound command here for just launching grapple (andy)
 
+    void OnCollisionEnter()
+    {
+        audioSource.PlayOneShot(impact, 0.7F);
+    }
         lr.SetPosition(0, gunTip.position);
         lr.SetPosition(1, currentGrapplePosition);
     }

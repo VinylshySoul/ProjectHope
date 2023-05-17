@@ -19,6 +19,11 @@ public class GrapplingGun : MonoBehaviour
         lr = GetComponent<LineRenderer>();
     }
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -37,6 +42,7 @@ public class GrapplingGun : MonoBehaviour
         DrawRope();
     }
 
+
     /// <summary>
     /// Call whenever we want to start a grapple
     /// </summary>
@@ -47,12 +53,7 @@ public class GrapplingGun : MonoBehaviour
         if (Physics.Raycast(camera.position, camera.forward, out hit, maxDistance, whatIsGrappleable))
         {
             print("grappling");
- //pop audio.play() sound command here for grapple attached to something (andy)   remember its different command for a looping sound in unity 
-            void Start()
-            {
-                audioSource = GetComponent<AudioSource>();
-            }
-
+ //pop audio.play() sound command here for grapple attached to something (andy)   remember its different command for a looping sound in unity
             grapplePoint = hit.point;
             joint = player.gameObject.AddComponent<SpringJoint>();
             joint.autoConfigureConnectedAnchor = false;
@@ -92,12 +93,9 @@ public class GrapplingGun : MonoBehaviour
         if (!joint) return;
         print("drawrope");
         currentGrapplePosition = Vector3.Lerp(currentGrapplePosition, grapplePoint, Time.deltaTime * 8f);
-//pop playoneshot sound command here for just launching grapple (andy)
-
-    void OnCollisionEnter()
-    {
+//pop playoneshot sound command here for just launching grapple (andy) 
         audioSource.PlayOneShot(impact, 0.7F);
-    }
+    
         lr.SetPosition(0, gunTip.position);
         lr.SetPosition(1, currentGrapplePosition);
     }

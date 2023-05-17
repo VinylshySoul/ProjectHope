@@ -5,6 +5,8 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
 
+    private float timer;
+
     private LineRenderer lr;
     void Start()
     {
@@ -13,6 +15,14 @@ public class Laser : MonoBehaviour
 
     void Update()
     {
+
+        timer += Time.deltaTime;
+        if(timer >3.5f)
+        {
+            lr.enabled = !lr.enabled;
+            timer = 0f; 
+        }
+
         lr.SetPosition(0, transform.position);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit))
@@ -31,6 +41,11 @@ public class Laser : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if(lr.enabled == false)
+        {
+            return;
+        }
+
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerHealth>().laserdamage();

@@ -17523,7 +17523,7 @@ MonoBehaviour:
   gunTip: {fileID: 1002819173}
   camera: {fileID: 1160377084}
   player: {fileID: 860324237}
-  impact: {fileID: 8300000, guid: 0457fee82ef5326458b55a8be6697aa6, type: 3}
+  impact: {fileID: 8300000, guid: 313184296f5e685449b61b352f89da2c, type: 3}
 --- !u!82 &1414975718
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17534,7 +17534,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0457fee82ef5326458b55a8be6697aa6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 313184296f5e685449b61b352f89da2c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
